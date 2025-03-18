@@ -95,10 +95,12 @@ h2 {
 	margin: 4rem 0 2rem 0;
 	text-align: center;
 }
-
-p {
-	margin-bottom: 1.5rem;
+.container p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
+
+
 
 /* *****************************************************************
 HEADER
@@ -121,9 +123,8 @@ header {
 h1, 
 h2, 
 h3 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .logo strong::before, 
@@ -155,14 +156,15 @@ h3::after {
 }
 
 .logo img {
-	width: 20%;
-	margin: 1rem 0;
+	text-align: center;
+    margin: 3em;
+    width: 200px;
 }
 
 .logo strong {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 /* *****************************************************************
@@ -177,25 +179,27 @@ nav ul {
 }
 
 nav a {
-	display: block;
-	color: black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+	text-decoration: none;	
 	font-weight: bold;
-	text-decoration: none;
-	padding: 1rem 2rem;
-	background-color: #ebe3db;
-	border-bottom: 1px solid #4c4343;
+	padding: 1rem 2rem;		
 	transition: all .7s linear;
+	background: linear-gradient(#D0C6BC, #FAF9F7, #FBFAF8);
+	border-bottom: 2px solid #000504;   
+    color: #4c4343;   
 }
 
 nav a:hover, 
 nav a:focus {
 	background-color: #950000;
-	color: white;
+	color: #4c4343; 
 }
 
 nav a.active {
 	background-color: #4c4343;
-	color: white;
+	color: #4c4343; 
 }
 
 /* *****************************************************************
@@ -508,7 +512,7 @@ form p {
 }
 
 input[type="submit"] {
-	width: 50%;
+	width: 100%;
 	margin: 3rem auto 0 auto;
 	border: none;
 	background-color: #4c4343;
@@ -582,6 +586,10 @@ h4 {
 
 aside {
 	padding: 2rem;
+	text-align: center;
+}
+.flex p {
+	margin-bottom: 1.5rem;
 	text-align: center;
 }
 
@@ -723,4 +731,30 @@ VERSION DESKTOP
 	form, video {
 		width: 70%;
 	}
+
+.logo strong, 
+h1, 
+h2, 
+h3 {
+	font-size: 3rem;
+	text-align: center;
+}
+/* **** PAGE CONTACT ********************************/
+input[type="submit"] {
+	width: 40%;
+	margin: 3rem auto 0 auto;
+	border: none;
+	background-color: #4c4343;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.6rem;
+	letter-spacing: .3rem;
+	padding: 1rem 3rem;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #950000;
+}
 }
